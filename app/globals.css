@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn {
+    @apply md:px-8 md:py-4 px-5 py-2.5 relative border border-primary bg-primary hover:bg-red-500 text-white font-medium transition-all duration-500 active:scale-95 w-fit rounded-full text-center;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+  background: #fff !important;
+  border: 2px solid #6b7280 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #6b7280 !important;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}
+
+#services .swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: -5px !important;
+}
